@@ -1,0 +1,39 @@
+#bannerContainer {
+    transition: 1s;
+}
+#body {
+    background-color: #f8fdff;
+}
+.reviewSectionDiv {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+
+    margin-bottom: 3rem;
+}
+
+.reviewDivs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+}
+
+@media (min-width: 992px) {
+    #bannerContainer {
+        display: flex;
+    }
+    #sectionSectionDiv {
+        display: flex;
+    }
+    .reviewSectionDiv,
+    .reviewDivs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .serviesDivs {
+        width: 50%;
+    }
+    #bannerParagraph {
+        font-size: 40px !important;
+    }
+}
